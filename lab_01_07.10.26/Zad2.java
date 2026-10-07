@@ -29,8 +29,10 @@ public class Zad2 {
         System.out.printf("Suma: %d%n", suma_liczb);
 
         int count = 0;
-        for (int i = 0; i < n; i+=2){
-            count++;
+        for (int i = 1; i <= n; i++){
+            if (i % 2 == 0){
+                count++;
+            }
         }
         System.out.printf("Liczb parzystych: %d", count);
     }
