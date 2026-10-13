@@ -1,0 +1,56 @@
+Klasa: Pojazd
+
+Stan:
+- Numer rejestracyjny
+- Marka
+- Model
+- Kategoria cenowa
+- Status dostępności
+
+Odpowiedzialności:
+
+- Przechowuje informacje o samochodzie i jego dostępności w wypożyczalni.
+
+Klasa: Klient
+
+Stan:
+
+- Imię
+- Nazwisko
+- Numer prawa jazdy
+- Dane kontaktowe
+
+Odpowiedzialności:
+
+- Przechowuje dane o kliencie.
+
+Klasa: Wypożyczenie
+
+Stan:
+
+- Pojazd (Informacje o wypożyczanym aucie bierze z klasy Pojazd)
+- Klient (Informacje o kliencie bierze z klasy Klient)
+- Data wypożyczenia
+- Termin zwrotu
+
+Odpowiedzialności:
+
+- Rejestrowanie kto wypożyczył jaki samochód i kiedy ma go zwrócić.
+
+Klasa: Zapłata
+
+Stan:
+- Kwota
+- Metoda płatności
+- Status
+- Data transakcji
+- Wypożyczenie
+
+Odpowiedzialności:
+- Przechowuje informacje o transakcji
+- Rejestruje czy klient zapłacił za auto
+
+1. Wypożyczenie powinno wiedzieć o Pojazd i Klient, Zapłata musi wiedzieć o Wypożyczenie
+2. Chyba nie
+3. Nie wziąłem tutaj pod uwagę sytuacji gdzie np. pracodawca płaci za auto pracownika. Model zakłada że płacący to wypożyczający
+4. Model ma za zadanie tylko zobaczyć czy zapłata została uregulowana, a nie kto za kogo zapłacił. Jeżeli pieniążki się zgadzają wszystko jest w porząsiu

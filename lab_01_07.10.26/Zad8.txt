@@ -1,0 +1,23 @@
+A. System wypożyczalni samochodów
+numerRejestracyjny
+marka
+model
+cenaWypozyczenia
+status
+
+B. Gra wyścigowa
+predkosc
+przyspieszenie
+nitro
+uszkodzenia
+wantedLevel
+
+C. System warsztatu samochodowego
+numerVin
+przebieg
+rokProdukcji
+historiaNapraw
+wlasciciel
+
+Dlaczego nie istnieje jedna "poprawna" klasa Samochod: Każda klasa ma inne zapotrzebowania do poprawnego działania.
+Wprowadzenie np. numerVin dla gry wiścigowej nie miało by sensu bo i tak nikt tego nie zobaczy.

@@ -1,0 +1,38 @@
+Klasa: Ksiazka
+
+Stan:
+- Tytuł
+- Autor
+- ISBN
+- Rok wydania
+
+Odpowiedzialności:
+- Przechowuje informacje o książce.
+
+
+Klasa: Czytelnik
+
+Stan:
+- Imię
+- Naziwsko
+- Numer karty bibliotecznej
+
+Odpowiedzialności:
+- Przechowuje dane o czytelniku
+
+
+Klasa: Wypożyczenie
+
+Stan:
+- Ksiązka (Informacje o wypożyczanej książce bierze z klasy Ksiazka)
+- Czytelnik (Informacje o czytelniku bierze z klasy Czytelnik)
+- Data wypozyczenia
+- Termin zwrotu
+
+Odpowiedzialności:
+- Rejestrowanie kto wypożyczył jaką książkę i kiedy ma zwrócić
+
+
+Zależności:
+Wypożyczenie -> Ksiazka
+Wypożyczenie -> Czytelnik
