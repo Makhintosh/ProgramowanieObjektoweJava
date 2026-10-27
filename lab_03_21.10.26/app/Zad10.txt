@@ -1,0 +1,27 @@
+1. studentName w klasie Student
+Instancyjy
+Gdyby to pole było statyczne, zmiana imienia jednego student zmieniłaby imienia również u innych studentów
+
+2. numberOfStudent w klasie Student
+Statyczny
+Liczba studentów to informacja wspólna dla wszystkich, a nie pojedyńczego studenta.
+
+3. PI w klasie matematycznej
+Statyczny
+Jest to stała używana w matematyce i nie ma sensu, aby każdy obiekt przechowywał własną kopię tej samej liczby
+
+4. balance w klasie BankAccount
+Instancyjny
+Każde konto bankowe ma swoje własne saldo
+
+5. caculateVat(double price) w bezstanowej klasie pomocniczej
+Statyczny
+Klasa bezstanowa nie przechowuje własnych danych, a wynik tej metody zależy wyłącznie od przekazanego price
+
+6. carMileage w klasie Car
+Instancyjny
+Przebieg jest indywidualny dla każdego samochodu
+
+7. MAX_LOGIN_ATTEMPTS w klasie LoginPolicy
+Statyczny
+Jest to stała, która jest narzucona z góry i nie powinna być zmieniana
